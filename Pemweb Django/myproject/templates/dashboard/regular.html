@@ -1,0 +1,475 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href='{% static "assets/img/favicon.ico" %}'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Light Bootstrap Dashboard PRO by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href='{% static "assets/css/bootstrap.min.css" %}' rel="stylesheet" />
+
+    <!--  Light Bootstrap Dashboard core CSS    -->
+    <link href='{% static "assets/css/light-bootstrap-dashboard.css" %}'?v=1.4.1 rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href='{% static "assets/css/demo.css" %}' rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='{% static "assets/css/pe-icon-7-stroke.css" %}' rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="sidebar" data-color="blue"    >
+        <!--
+
+            Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+            Tip 2: you can also add an image using data-image tag
+
+        -->
+
+        <div class="logo">
+            <a class="simple-text logo-mini">
+                <i class="pe-7s-gift"></i>
+            </a>
+
+			<a href="http://www.creative-tim.com" class="simple-text logo-normal">
+				PMB ONLINE
+			</a>
+        </div>
+
+    	<div class="sidebar-wrapper">
+            <div class="user">
+				<div class="info">
+					<div class="photo">
+	                    <img src="../../assets/img/default-avatar.png" />
+	                </div>
+
+					<a data-toggle="collapse" href="#collapseExample" class="collapsed">
+						<span>
+							Tania Andrew
+	                        <b class="caret"></b>
+						</span>
+                    </a>
+
+					<div class="collapse" id="collapseExample">
+						<ul class="nav">
+							<li>
+								<a href="#pablo">
+									<span class="sidebar-mini">MP</span>
+									<span class="sidebar-normal">My Profile</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#pablo">
+									<span class="sidebar-mini">EP</span>
+									<span class="sidebar-normal">Edit Profile</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#pablo">
+									<span class="sidebar-mini">S</span>
+									<span class="sidebar-normal">Settings</span>
+								</a>
+							</li>
+						</ul>
+                    </div>
+				</div>
+            </div>
+
+			<ul class="nav">
+				<li>
+					<a href="../dashboard.html">
+						<i class="pe-7s-graph"></i>
+						<p>Dashboard</p>
+					</a>
+				</li>
+            </ul>
+            <ul class="nav">
+				<li>
+					<a href="/pendaftaran">
+						<i class="pe-7s-note2"></i>
+						<p>Forms</p>
+					</a>
+				</li>
+            </ul>
+            <ul class="nav">
+				<li>
+					<a href="/Pengumuman">
+						<i class="pe-7s-news-paper"></i>
+						<p>Pengumuman</p>
+					</a>
+				</li>
+            </ul>
+					<div class="collapse" id="formsExamples">
+						<ul class="nav">
+							<li class="active">
+								<a href="../regular.html">
+									<span class="sidebar-mini">Rf</span>
+									<span class="sidebar-normal">Regular Forms</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+				<div class="navbar-minimize">
+    				<button id="minimizeSidebar" class="btn btn-primary btn-fill btn-round btn-icon">
+    					<i class="fa fa-ellipsis-v visible-on-sidebar-regular"></i>
+    					<i class="fa fa-navicon visible-on-sidebar-mini"></i>
+    				</button>
+    			</div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Home</a>
+                </div>
+                <div class="collapse navbar-collapse">
+
+                    <form class="navbar-form navbar-left navbar-search-form" role="search">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" value="" class="form-control" placeholder="Search...">
+                        </div>
+                    </form>
+
+                    <ul class="nav navbar-nav navbar-right">    
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-gavel"></i>
+                                <p class="hidden-md hidden-lg">
+                                    Actions
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Create New Post</a></li>
+                                <li><a href="#">Manage Something</a></li>
+                                <li><a href="#">Do Nothing</a></li>
+                                <li><a href="#">Submit to live</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Another Action</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="notification">5</span>
+                                <p class="hidden-md hidden-lg">
+    								Notifications
+    								<b class="caret"></b>
+    							</p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown dropdown-with-icons">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-list"></i>
+                                <p class="hidden-md hidden-lg">
+    								More
+    								<b class="caret"></b>
+    							</p>
+                            </a>
+                            <ul class="dropdown-menu dropdown-with-icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-mail"></i> Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-help1"></i> Help Center
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-tools"></i> Settings
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="pe-7s-lock"></i> Lock Screen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-danger">
+                                        <i class="pe-7s-close-circle"></i>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">Formulir</div>
+                            <div class="content">
+                                <form method="#" action="#">
+                                    <div class="form-group">
+                                        <label>Nama Lengkap</label>
+                                        <input type="text" placeholder="Nama Lengkap" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Email" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Nomor Induk Kependudukan (NIK):</label>
+                                        <input type="text" placeholder="NIK" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Tempat Lahir</label>
+                                        <input type="text" placeholder="Masukkan Tempat Lahir" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Tanggal Lahir :</label>
+                                        <input type="date" name="tanggal_lahir" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Nomor Handphone</label>
+                                        <input type="text" placeholder="Masukkan Nomor Handphone" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Nomor Handphone Orang Tua</label>
+                                        <input type="text" placeholder="Masukkan Nomor Handphone Orang Tua" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Alamat</label>
+                                        <input type="text" placeholder="Masukkan Alamat Rumah" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Dusun</label>
+                                        <input type="text" placeholder="Masukkan Dusun" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Kelurahan</label>
+                                        <input type="text" placeholder="Masukkan Kelurahan" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Kecamatan</label>
+                                        <input type="text" placeholder="Masukkan Kecamatan" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Kabupaten/Kota</label>
+                                        <input type="text" placeholder="Masukkan Kabupaten/Kota" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Provinsi</label>
+                                        <input type="text" placeholder="Masukkan Provinsi" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Jenis Kelamin :</label>
+                                        <select class="form-control">
+                                            <option>Laki-Laki</option>
+                                            <option>Perempuan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pilih Program Studi 1 :</label>
+                                        <select class="form-control" name="prog1">
+                                            <option>Pilih</option>
+                                            <option value="S1 - Pendidikan Dokter">S1 - Pendidikan Dokter</option>
+                                            <option value="D4 - Ankes">D4 - Analis Kesehatan</option>
+                                            <option value="S1 - IKM">S1 - Ilmu Kesehatan Masyarakat</option>
+                                            <option value="S1 - Gizi">S1 - Gizi</option>
+                                            <option value="S1 - PGSD">S1 - PGSD</option>
+                                            <option value="S1 - PGPAUD">S1 - PGPAUD</option>
+                                            <option value="S1 - PBI">S1 - Pendidikan Bahasa Inggris</option>
+                                            <option value="S1 - Akuntansi">S1 - Akuntansi</option>
+                                            <option value="S1 - Manajemen">S1 - Manajemen</option>
+                                            <option value="S1 - SI">S1 - Sistem Informasi</option>
+                                            <option value="S1 - Keperawatan">S1 - Keperawatan</option>
+                                            <option value="D3 - Keperawatan">D3 - Keperawatan</option>
+                                            <option value="D4 - Bidan">D4 - Bidan</option>
+                                            <option value="D3 - Kebidanan">D3 - Kebidanan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pilih Program Studi 2 :</label>
+                                        <select class="form-control" name="prog1">
+                                            <option>Pilih</option>
+                                            <option value="S1 - Pendidikan Dokter">S1 - Pendidikan Dokter</option>
+                                            <option value="D4 - Ankes">D4 - Analis Kesehatan</option>
+                                            <option value="S1 - IKM">S1 - Ilmu Kesehatan Masyarakat</option>
+                                            <option value="S1 - Gizi">S1 - Gizi</option>
+                                            <option value="S1 - PGSD">S1 - PGSD</option>
+                                            <option value="S1 - PGPAUD">S1 - PGPAUD</option>
+                                            <option value="S1 - PBI">S1 - Pendidikan Bahasa Inggris</option>
+                                            <option value="S1 - Akuntansi">S1 - Akuntansi</option>
+                                            <option value="S1 - Manajemen">S1 - Manajemen</option>
+                                            <option value="S1 - SI">S1 - Sistem Informasi</option>
+                                            <option value="S1 - Keperawatan">S1 - Keperawatan</option>
+                                            <option value="D3 - Keperawatan">D3 - Keperawatan</option>
+                                            <option value="D4 - Bidan">D4 - Bidan</option>
+                                            <option value="D3 - Kebidanan">D3 - Kebidanan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pilih Program Studi 3 :</label>
+                                        <select class="form-control">
+                                            <option>Pilih</option>
+                                            <option value="S1 - Pendidikan Dokter">S1 - Pendidikan Dokter</option>
+                                            <option value="D4 - Ankes">D4 - Analis Kesehatan</option>
+                                            <option value="S1 - IKM">S1 - Ilmu Kesehatan Masyarakat</option>
+                                            <option value="S1 - Gizi">S1 - Gizi</option>
+                                            <option value="S1 - PGSD">S1 - PGSD</option>
+                                            <option value="S1 - PGPAUD">S1 - PGPAUD</option>
+                                            <option value="S1 - PBI">S1 - Pendidikan Bahasa Inggris</option>
+                                            <option value="S1 - Akuntansi">S1 - Akuntansi</option>
+                                            <option value="S1 - Manajemen">S1 - Manajemen</option>
+                                            <option value="S1 - SI">S1 - Sistem Informasi</option>
+                                            <option value="S1 - Keperawatan">S1 - Keperawatan</option>
+                                            <option value="D3 - Keperawatan">D3 - Keperawatan</option>
+                                            <option value="D4 - Bidan">D4 - Bidan</option>
+                                            <option value="D3 - Kebidanan">D3 - Kebidanan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Provinsi</label>
+                                        <input type="file" placeholder="Masukkan Provinsi" class="form-control">
+                                    </div>        
+
+                                    <button type="submit" class="btn btn-fill btn-info">Submit</button>
+                                </form>
+                            </div>
+                        </div>  <!-- end card -->
+
+                    </div> <!--  end col-md-6  --><!-- end row -->
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                </p>
+            </div>
+        </footer>
+
+
+    </div>
+</div>
+
+
+</body>
+    <!--   Core JS Files  -->
+    <script src='{% static "assets/js/jquery.min.js" %}' type="text/javascript"></script>
+	<script src='{% static "assets/js/bootstrap.min.js" type="text/javascript" %}'></script>
+	<script src='{% static "assets/js/perfect-scrollbar.jquery.min.js" %}' type="text/javascript"></script>
+
+
+	<!--  Forms Validations Plugin -->
+	<script src='{% static "assets/js/jquery.validate.min.js" %}'></script>
+
+	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+	<script src="../../assets/js/moment.min.js"></script>
+
+    <!--  Date Time Picker Plugin is included in this js file -->
+    <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!--  Select Picker Plugin -->
+    <script src="../../assets/js/bootstrap-selectpicker.js"></script>
+
+	<!--  Checkbox, Radio, Switch and Tags Input Plugins -->
+	<script src='{% static "assets/js/bootstrap-switch-tags.min.js" %}'></script>
+
+	<!--  Charts Plugin -->
+	<script src="../../assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="../../assets/js/bootstrap-notify.js"></script>
+
+    <!-- Sweet Alert 2 plugin -->
+	<script src="../../assets/js/sweetalert2.js"></script>
+
+    <!-- Vector Map plugin -->
+	<script src="../../assets/js/jquery-jvectormap.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+	<!-- Wizard Plugin    -->
+    <script src="../../assets/js/jquery.bootstrap.wizard.min.js"></script>
+
+	<!--  Bootstrap Table Plugin    -->
+	<script src='{% static "assets/js/bootstrap-table.js" %}'></script>
+
+	<!--  Plugin for DataTables.net  -->
+	<script src="../../assets/js/jquery.datatables.js"></script>
+
+    <!--  Full Calendar Plugin    -->
+    <script src="../../assets/js/fullcalendar.min.js"></script>
+
+    <!-- Light Bootstrap Dashboard Core javascript and methods -->
+	<script src='{% static "assets/js/light-bootstrap-dashboard.js" %}'?v=1.4.1></script>
+
+	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+	<script src="../../assets/js/demo.js"></script>
+
+</html>
